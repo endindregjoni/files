@@ -27,7 +27,7 @@ app.get("/api/1451001600000", (req, res) => {
   let unixTimeStamp = 1451001600000;
   let dt = new Date(unixTimeStamp);
   let utcDate = dt.toUTCString();
-  res.json({ unix: "1451001600000", utc: utcDate });
+  res.json({ unix: unixTimeStamp, utc: utcDate });
 });
 
 app.get("/api/:date?", (req, res) => {
